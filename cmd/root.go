@@ -10,4 +10,4 @@ import (
 var Name = "httppollerhistorybeat"
 
 // RootCmd to handle beats cli
-var RootCmd = cmd.GenRootCmd(Name, "", beater.New)
+var RootCmd = cmd.GenRootCmd(Name, "1.0.0", beater.New)
