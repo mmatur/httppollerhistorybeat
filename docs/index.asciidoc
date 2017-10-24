@@ -1,0 +1,5 @@
+= Httppollerhistorybeat Docs
+
+Welcome to the Httppollerhistorybeat documentation.
+
+

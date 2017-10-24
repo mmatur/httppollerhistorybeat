@@ -1,0 +1,30 @@
+2017-10-23T22:00:37+02:00 DBG  Disable stderr logging
+2017-10-23T22:00:37+02:00 INFO Home path: [/home/michael/sources/go/src/github.com/mmatur/httppollerhistorybeat] Config path: [/home/michael/sources/go/src/github.com/mmatur/httppollerhistorybeat] Data path: [/home/michael/sources/go/src/github.com/mmatur/httppollerhistorybeat/data] Logs path: [/home/michael/sources/go/src/github.com/mmatur/httppollerhistorybeat/logs]
+2017-10-23T22:00:37+02:00 DBG  Beat metadata path: /home/michael/sources/go/src/github.com/mmatur/httppollerhistorybeat/data/meta.json
+2017-10-23T22:00:37+02:00 INFO Beat UUID: 08f21cd2-efa1-4d0c-a27a-285ba66f0408
+2017-10-23T22:00:37+02:00 INFO Setup Beat: httppollerhistorybeat; Version: 6.0.0-rc1
+2017-10-23T22:00:37+02:00 DBG  Initializing output plugins
+2017-10-23T22:00:37+02:00 DBG  Processors: 
+2017-10-23T22:00:37+02:00 INFO Metrics logging every 30s
+2017-10-23T22:00:37+02:00 INFO Elasticsearch url: http://67.205.133.137:9200
+2017-10-23T22:00:37+02:00 DBG  start pipeline event consumer
+2017-10-23T22:00:37+02:00 INFO Beat name: MM-XPS-15
+2017-10-23T22:00:37+02:00 INFO Elasticsearch url: http://67.205.133.137:9200
+2017-10-23T22:00:37+02:00 DBG  ES Ping(url=http://67.205.133.137:9200)
+2017-10-23T22:00:38+02:00 DBG  Ping status code: 200
+2017-10-23T22:00:38+02:00 INFO Connected to Elasticsearch version 5.6.3
+2017-10-23T22:00:38+02:00 DBG  HEAD http://67.205.133.137:9200/_template/traefik  <nil>
+2017-10-23T22:00:38+02:00 INFO Loading template for Elasticsearch version: 5.6.3
+2017-10-23T22:00:38+02:00 INFO Existing template will be overwritten, as overwrite is enabled.
+2017-10-23T22:00:38+02:00 DBG  Try loading template with name: traefik
+2017-10-23T22:00:38+02:00 DBG  PUT http://67.205.133.137:9200/_template/traefik  map[mappings:{"_default_":{"_meta":{"version":"6.0.0-rc1"},"_source":{"enabled":true},"date_detection":false,"dynamic_templates":[{"fields":{"mapping":{"type":"keyword"},"match_mapping_type":"string","path_match":"fields.*"}},{"docker.container.labels":{"mapping":{"type":"keyword"},"match_mapping_type":"string","path_match":"docker.container.labels.*"}},{"strings_as_keyword":{"mapping":{"ignore_above":1024,"type":"keyword"},"match_mapping_type":"string"}}],"properties":{"@timestamp":{"type":"date"},"beat":{"properties":{"hostname":{"ignore_above":1024,"type":"keyword"},"name":{"ignore_above":1024,"type":"keyword"},"timezone":{"ignore_above":1024,"type":"keyword"},"version":{"ignore_above":1024,"type":"keyword"}}},"docker":{"properties":{"container":{"properties":{"id":{"ignore_above":1024,"type":"keyword"},"image":{"ignore_above":1024,"type":"keyword"},"labels":{"type":"object"},"name":{"ignore_above":1024,"type":"keyword"}}}}},"dockerhub":{"properties":{"repository":{"properties":{"fullname":{"ignore_above":1024,"type":"keyword"},"name":{"ignore_above":1024,"type":"keyword"},"owner":{"ignore_above":1024,"type":"keyword"},"pull_count":{"type":"long"},"star_count":{"type":"long"}}}}},"error":{"properties":{"code":{"type":"long"},"message":{"norms":false,"type":"text"},"type":{"ignore_above":1024,"type":"keyword"}}},"fields":{"type":"object"},"kubernetes":{"properties":{"annotations":{"type":"object"},"container":{"properties":{"image":{"ignore_above":1024,"type":"keyword"},"name":{"ignore_above":1024,"type":"keyword"}}},"labels":{"type":"object"},"namespace":{"ignore_above":1024,"type":"keyword"},"pod":{"properties":{"name":{"ignore_above":1024,"type":"keyword"}}}}},"meta":{"properties":{"cloud":{"properties":{"availability_zone":{"ignore_above":1024,"type":"keyword"},"instance_id":{"ignore_above":1024,"type":"keyword"},"instance_name":{"ignore_above":1024,"type":"keyword"},"machine_type":{"ignore_above":1024,"type":"keyword"},"project_id":{"ignore_above":1024,"type":"keyword"},"provider":{"ignore_above":1024,"type":"keyword"},"region":{"ignore_above":1024,"type":"keyword"}}}}},"tags":{"ignore_above":1024,"type":"keyword"}}}} order:1 settings:{"index":{"mapping":{"total_fields":{"limit":10000}},"refresh_interval":"5s"}} template:traefik-*]
+2017-10-23T22:00:38+02:00 INFO Elasticsearch template with name 'traefik' loaded
+2017-10-23T22:00:38+02:00 INFO Elasticsearch url: http://67.205.133.137:9200
+2017-10-23T22:00:38+02:00 DBG  ES Ping(url=http://67.205.133.137:9200)
+2017-10-23T22:00:38+02:00 DBG  Ping status code: 200
+2017-10-23T22:00:38+02:00 INFO Connected to Elasticsearch version 5.6.3
+2017-10-23T22:00:38+02:00 DBG  Initialize the Elasticsearch 5.6.3 loader
+2017-10-23T22:00:38+02:00 DBG  Elasticsearch URL http://67.205.133.137:9200
+2017-10-23T22:00:38+02:00 DBG  HEAD http://67.205.133.137:9200/.kibana  <nil>
+2017-10-23T22:00:38+02:00 DBG  Importing directory /home/michael/sources/go/src/github.com/mmatur/httppollerhistorybeat/kibana/5.x
+2017-10-23T22:00:38+02:00 CRIT Exiting: Error importing Kibana dashboards: fail to import the dashboards in Elasticsearch: Error importing directory /home/michael/sources/go/src/github.com/mmatur/httppollerhistorybeat/kibana: No directory /home/michael/sources/go/src/github.com/mmatur/httppollerhistorybeat/kibana/5.x

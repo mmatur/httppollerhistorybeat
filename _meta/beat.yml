@@ -1,0 +1,7 @@
+################### Httppollerhistorybeat Configuration Example #########################
+
+############################# Httppollerhistorybeat ######################################
+
+httppollerhistorybeat:
+  # Defines the path of the json file to load
+  path: "/datas.json"
